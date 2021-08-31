@@ -113,6 +113,11 @@ public class TopRanksPanel extends PluginPanel {
         return panel;
     }
 
+    public void lookup(String username) {
+        searchBar.setText(username);
+        lookup();
+    }
+
     private void lookup() {
         final String lookup = searchBar.getText();
         if (Strings.isNullOrEmpty(lookup)) {
